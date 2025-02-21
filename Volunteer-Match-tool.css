@@ -1,0 +1,323 @@
+/* Styling the body */
+body {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #fbf7f5;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center;
+    background-color: #F1F1F1;
+    padding: 20px;
+}
+
+.logo-wrapper {
+    margin-right: 375px; /* Adjust the margin to create space between the logo and the page name */
+}
+
+.logo {
+    width: 200px;
+    border: none;
+}
+
+.page-name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: initial;
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #09264a;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+.navigation a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.navigation td {
+    border: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 10px;
+}
+
+.navigation td a {
+    text-decoration: none;
+}
+
+/* Navigation Bar buttons */
+/*Credit to uiverse.io for the animation*/
+.nav-button {
+    display: inline-block;
+    border-radius: 100px;
+    background-color: #C93A1C;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 16px;
+    width: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0;
+}
+
+.nav-button span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: initial;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.nav-button span:after {
+    content: '\00BB';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+}
+
+.nav-button:hover span {
+    padding-right: 15px;
+}
+
+.nav-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* Styling for movable button */
+.movable-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #C93A1C;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 50%;
+    padding: 10px; /* Adjust padding */
+    width: 100px; /* Adjust width */
+    height: 50px; /* Adjust height */
+    cursor: pointer;
+    z-index: 9999;
+    transition: all 0.3s ease;
+}
+
+.movable-button:hover {
+    background-color: #FF5733;
+}
+
+/* Footer */
+footer {
+    background-color: #F1F1F1;
+    color: white;
+    padding: 10px;
+    position: relative;
+    
+}
+
+footer * {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+footer .main-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.quickLinks {
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    float: left;
+    text-align: center;
+}
+
+.quickLinks ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quickLinks li {
+    margin-bottom: 20px;
+}
+
+.quickLinks h1 {
+    font-size: 35px;
+    color: red;
+}
+
+.quickLinks h3 {
+    font-size: 25px;
+    color: white;
+}
+
+.legal-info {
+    text-align: left;
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    width: 98.65%;
+    background-color: #09264a;
+    padding: 10px;
+}
+
+.join {
+    text-align: center;
+}
+
+.join h1 {
+    font-weight: bold;
+    font-size: 35px;
+    color: red;
+}
+
+.join h4 {
+    margin-top: 0;
+}
+
+.join form {
+    display: inline-block;
+}
+
+.right {
+    margin: auto auto 80px;
+}
+
+form[name="main"] {
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form[name="main"] label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form[name="main"] button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+form[name="main"] button:hover {
+    background-color: #45a049;
+}
+
+.social-media {
+    margin-right: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.social-media a {
+    text-decoration: none;
+}
+
+.social-media img {
+    max-width: 60px;
+    max-height: 60px;
+}
+
+.legal-info p {
+    margin-bottom: 0;
+}
+
+.legal-info a {
+    display: block;
+}
+
+
+/*Page styling*/
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label,
+input,
+button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+#results ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#results li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
